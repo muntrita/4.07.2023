@@ -54,6 +54,10 @@ if (totalShoppingCart <= 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let blackFriday=totalShoppingCart- totalShoppingCart*0.2;
+if(blackFriday>50){
+console.log("hai diritto alla spedizione gratuita! SALDO: ${totalblackFriday}€);
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -69,6 +73,11 @@ console.log(numbers);
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
+typeof "john";
+typeof 3.14;
+typeof true;
+typeof false;
+typeof x;
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -100,6 +109,7 @@ if (val < 10) {
 } else {
   console.log("Uguale a 10 o maggiore");
 }
+console.log(val);
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -155,7 +165,7 @@ const myIdentity3 = {
   skills: ["javascript", "html", "css"],
 };
 
-myIdentity3.pop();
+myIdentity3.skills.pop();
 console.log(myIdentity3);
 
 /* ESERCIZIO 14
@@ -163,11 +173,22 @@ console.log(myIdentity3);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numberss = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+const arr = [];
+arr.push(1);
+arr.push(3);
+arr.push(4);
+arr.push(5);
+arr.push(6);
+arr.push(7);
+arr.push(8);
+arr.push(9);
+arr.push(10);
+console.log(arr);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-numberss.pop();
+arr.splice(arr.length - 1, 1, 100);
+console.log(arr);
